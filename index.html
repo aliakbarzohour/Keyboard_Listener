@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keyboard Listener</title>
     <!-- Css Link -->
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <!-- Ubuntu Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet" />
 </head>
 
 <body>
@@ -23,21 +23,18 @@
     -->
     <!-- ---------------------------------------------- -->
 
-    <h1 class="keyname">
-        Please Press Any Key ...
-    </h1>
     <div class="container">
-        <h2 class="keyname">Key</h2>
+        <h1 class="keyname">Press Any Key</h1>
         <label>Key Code : </label><span class="keycode">Your Key Code</span>
     </div>
     <!-- ---------------------------------------------- -->
     <!-- Js Code -->
     <script>
-        // define Showing TAg 
+        // define Showing TAg
         let keyname = document.querySelector(".keyname");
         let keycode = document.querySelector(".keycode");
-        // Listen To Window 
-        window.addEventListener("keydown", e => {
+        // Listen To Window
+        window.addEventListener("keydown", (e) => {
             // Change Showing tag to keyboard Value
             keyname.innerHTML = e.key;
             keycode.innerHTML = e.keyCode;
