@@ -38,6 +38,9 @@
             // Change Showing tag to keyboard Value
             keyname.innerHTML = e.key;
             keycode.innerHTML = e.keyCode;
+            if (e.keyCode === 32) {
+                keyname.innerHTML = "Space";
+            }
         });
     </script>
     <!-- ---------------------------------------------- -->
